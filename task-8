@@ -1,0 +1,16 @@
+# CODTECH-Task-8
+NAME-RIYA NAVGHARE
+COMPANY-CODTECH IT SOLUTION
+ID-CT06DR695
+DOMAIN-Artificial Intelligence
+DURATION-OCT TO DEC
+MENTOR- NEELA SANTHU
+
+How to use;
+Save this as text_generation_demo.ipynb.
+
+Open it in Jupyter Notebook, JupyterLab, or VS Code.
+
+Replace "YOUR_API_KEY" with your OpenAI API key (or load it from environment variables).
+
+Run all cells, enter a prompt (e.g., “Write a short story about a time-traveling botanist”), and see the generated text.
