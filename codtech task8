@@ -1,0 +1,33 @@
+# ---
+# title: Text Generation Demo
+# description: Minimal notebook showing text generation from a user prompt using OpenAI's GPT model.
+# ---
+
+# ## 1. Install and import dependencies
+# Make sure you have the OpenAI Python package installed.
+# You can uncomment the line below if needed.
+
+# !pip install openai
+
+from openai import OpenAI
+
+# ## 2. Initialize the client
+# Replace 'YOUR_API_KEY' with your actual OpenAI API key, or set it as an environment variable.
+client = OpenAI(api_key="YOUR_API_KEY")
+
+# ## 3. Get a user prompt
+user_prompt = input("Enter your prompt: ")
+
+# ## 4. Generate text based on the prompt
+response = client.chat.completions.create(
+    model="gpt-5",
+    messages=[
+        {"role": "system", "content": "You are a helpful text generation assistant."},
+        {"role": "user", "content": user_prompt}
+    ]
+)
+
+# ## 5. Display the generated text
+generated_text = response.choices[0].message.content
+print("\n--- Generated Text ---")
+print(generated_text)
